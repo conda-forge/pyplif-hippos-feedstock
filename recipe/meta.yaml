@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/radifar/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 7e533bfcfc2322c5a03dd33b2862773dd3fa0bc179953525386f0f1928ce7197
+  sha256: 9ca792f5d9b6cb68f191583f7ef49917d7d4ce076060cd89413c687f6681bb5c
 
 build:
   noarch: python
