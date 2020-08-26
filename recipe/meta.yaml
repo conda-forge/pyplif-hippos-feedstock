@@ -1,5 +1,5 @@
 {% set name = "pyplif-hippos" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/radifar/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 9ca792f5d9b6cb68f191583f7ef49917d7d4ce076060cd89413c687f6681bb5c
+  sha256: 9391f9abb6e78ed8915b49d1e95d2894b7294218f40ea742a16df7f7e656125f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   home: https://github.com/radifar/PyPLIF-HIPPOS
   license: MHPND
   license_file: LICENSE.txt
-  summary: 'HIPPOS Is PyPLIF On Steroids'
+  summary: HIPPOS Is PyPLIF On Steroids
   description: |
     A Molecular Interaction Fingerprinting Tool for Docking Results of Autodock Vina and PLANTS.
   doc_url: https://pyplif-hippos.readthedocs.io/
