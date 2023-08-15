@@ -1,5 +1,5 @@
 {% set name = "pyplif-hippos" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/radifar/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 9391f9abb6e78ed8915b49d1e95d2894b7294218f40ea742a16df7f7e656125f
+  sha256: 3bf409011254e874b54bf6e896a291f73c2f3b9c915acbf1658b4f0da0802faa
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy >=1.6
     - openbabel >=2.2
     - bitarray >=0.8
